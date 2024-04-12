@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green-Book</title>
+    
+    <link rel="stylesheet" href="book.css">
+   
+</head>
+<body >
+
+    
+    <h1 class="head">Green Books</h1>
+ 
+    <div class="overlay" ></div>
+
+<div class="flex">  
+
+  <div class="box-1">
+    <h1 class="book-headline">Rich Dad Poor Dad</h1>
+    <h4 class="book-author">Robert</h4>
+    <p class="book-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio necessitatibus accusamus vel officia sapiente quam enim asperiores, alias nemo fugiat quidem perspiciatis nobis quibusdam, minus ratione ullam sit. Hic, perspiciatis?</p>
+    <button class="del-button-1" onclick="deleteelement(event)">Delete</button>
+  </div>
+
+    
+  <div class="box-1">
+    <h1 class="book-headline">Into the wild</h1>
+    <h4  class="book-author">Emile</h4>
+    <p class="book-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio necessitatibus accusamus vel officia sapiente quam enim asperiores, alias nemo fugiat quidem perspiciatis nobis quibusdam, minus ratione ullam sit. Hic, perspiciatis?</p>
+    <button class="del-button-1" onclick="deleteelement(event)">Delete</button>
+  </div>
+
+</div> 
+
+<div class="popup-description">
+    <h2>Create book</h2>
+    <input type="text" placeholder="Book-Title" class="book-title"><br>
+    <input type="text" placeholder="Author-name" class="author-name"> <br>
+    <textarea  placeholder="Short Description" class="Short-Description"></textarea><br>
+    <button class="add-button" >Add</button>
+    <button class="cancel-button">Cancel</button>
+   </div>
+
+
+
+<div>
+    <button   class="popup-btn" onclick={gan()}>+</button>
+</div>
+
+<script src="book.js"></script>
+</body>
+</html>

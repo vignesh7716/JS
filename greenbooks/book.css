@@ -1,0 +1,168 @@
+.head{
+    background-color: #1f6f78;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 20px;
+    color:white;
+    text-align: center;
+    font-family: sans-serif;
+}
+.box-1{
+    width: 20%;
+    
+    border: 2px solid none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:#004445;
+    color:white;
+    font-family: sans-serif;
+    margin: 30px;
+    display: inline-block;
+
+}
+.box-1 h1{
+    color:#f8b400;
+    margin-top: 30px;
+}
+.del-button-1{
+    width: 70px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc2f2f;
+    color: white;
+    
+    
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color:#6bbcc5;
+    
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -10px;
+    z-index: 1;
+    display:none;
+   
+   
+}
+.popup-btn{
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 100%;
+    border: none;
+    background-color: #004445;
+    font-size: 40px;
+    color: white;
+}
+.popup-btn:hover{
+    background-color: red;
+    color: white;
+}
+.popup-btn:active{
+    background-color: #004445;
+    color: white;
+}
+.popup-description{
+    border: 2px solid none;
+    background-color:#b6e1e0;
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left:500px;
+    border-radius: 10px;
+    display:none;
+    
+
+}
+.popup-description h2{
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-top: 10px;
+    color: #1f6f78;
+}
+.book-title{
+   
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid #1f6f78;
+    font-size: 18px;
+    
+}
+.author-name{
+    width: 80%;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #1f6f78;
+    font-size: 18px;
+}
+.Short-Description{
+    background-color: transparent;
+    border: none;
+    border: 2px solid #1f6f78;
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.add-button{
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color: #1f6f78;
+   color: white;
+  
+   border: none;
+   margin-top: 20px;
+   margin-left: -190px;
+}
+.cancel-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #dc2f2f;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    border-radius: 2px;
+}
+.popup-description input::placeholder{
+    color:#1f6f78;
+}
+.popup-description textarea::placeholder{
+    color: #1f6f78;
+}
+.popup-description input:focus{
+    outline: none;
+}
+.popup-description textarea:focus{
+    outline: none;
+}
+
+.flex{
+    display: inline;
+    
+}
+.cancel-button:hover{
+    background-color: black;
+    color: white;
+}
+.cancel-button:active{
+    background-color: #dc2f2f;
+    color: white;
+}
