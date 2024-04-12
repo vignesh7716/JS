@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <title>Guessing-game</title>
+  <link rel="shortcut icon" href="orange.png"
+</head>
+<body background="orng.webp" >
+  <div class="container"  >
+    <center>
+  <h1 class="head">Guessing Game!</h1>
+  <p class="para">Now you are the openent of the computer, once the game is start computer will be choose the random number between 1 - 10. In the input-box you have to type your guessing number , Once your guessing number and the computer number is same You win the match. Otherwise you have a chanse untill the score comes to 0 .</p>
+  <h2 class="h2">Let's Start!</h2>
+  <input id="guessingnum" placeholder="Guess the number..." ><br>
+  <button onclick="result()" class="button">Check</button>
+  <h3 id="ans">Let's see the result</h3>
+  <p id="score">Score : 10</p> 
+
+  <script>
+    var num1=document.getElementById("guessingnum")
+    var random=Math.floor( Math.random()*10+1)
+    var ans=document.getElementById("ans")
+    var score=document.getElementById("score")
+    var totalscore=10
+    
+    function result(){
+      console.log(random)
+      var guess=num1.value
+      if( guess==random)
+      {
+        console.log("Won")
+        alert("won")
+        ans.textContent="Right"
+        ans.style.color="blue"
+        
+      }
+      else
+      {
+        totalscore=totalscore-1
+        score.textContent="Score : "+  totalscore
+        console.log("Lose");
+        ans.textContent="Wrong"
+        ans.style.color="black"
+
+      }
+    }
+ 
+  </script>
+  </center>
+  </div>
+</body>
+
+
+
+
+
+
+<style>
+  .para{
+  
+    font-family: sans-serif;
+    color:white ;
+    width: 900px;
+  }
+  .container{
+    margin-top: 150px;
+
+}
+.head{
+  font-family: sans-serif;
+  color: white;
+  font-size: 50px;
+}
+#guessingnum{
+  font-size: 15px;
+  height: 30px;
+  width: 400px;
+  border-radius: 5px;
+  border: 2px solid white;
+  
+}
+.button{
+  
+  margin-top: 30px;
+  width: 100px;
+  height: 30px;
+  background-color: #1F2833;
+ 
+  border: 2px solid #1F2833;
+  border-radius: 30px;
+  color: white;
+  transition: 0.6s ease;
+}
+.button:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  transition: 0.6s;
+ 
+}
+.button:active{
+  background-color: #1F2833;
+  color: white;
+  border: 2px solid none;
+}
+#ans{
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+#score{
+  font-size: 30px;
+  color: white;
+}
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 680px;
+}
+.h2{
+  color: azure;
+  font-family: sans-serif;
+}
+</style>
